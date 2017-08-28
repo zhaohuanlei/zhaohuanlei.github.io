@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>前端性能与安全 | 赵欢磊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、前端性能优化： 内容部分：尽量减少HTTP请求、减少DNS查找、避免跳转、缓存Ajax、预加载、减少DOM 元素数量、减少页面层级嵌套、用域名划分页面内容、使frame数量最少、避免404错误、减少Cookie体积； 服务器部分：使用内容分发网络、使用Gzip、避免空图片、文件地址等； CSS部分：文件合并、放顶部、避免使用import、避免使用滤镜、避免使用表达式； JS部分：文件合并、放底">
+<meta property="og:type" content="article">
+<meta property="og:title" content="前端性能与安全">
+<meta property="og:url" content="https://zhaohuanlei.github.io/2017/08/07/前端性能与安全/index.html">
+<meta property="og:site_name" content="赵欢磊">
+<meta property="og:description" content="一、前端性能优化： 内容部分：尽量减少HTTP请求、减少DNS查找、避免跳转、缓存Ajax、预加载、减少DOM 元素数量、减少页面层级嵌套、用域名划分页面内容、使frame数量最少、避免404错误、减少Cookie体积； 服务器部分：使用内容分发网络、使用Gzip、避免空图片、文件地址等； CSS部分：文件合并、放顶部、避免使用import、避免使用滤镜、避免使用表达式； JS部分：文件合并、放底">
+<meta property="og:updated_time" content="2017-08-28T13:14:26.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="前端性能与安全">
+<meta name="twitter:description" content="一、前端性能优化： 内容部分：尽量减少HTTP请求、减少DNS查找、避免跳转、缓存Ajax、预加载、减少DOM 元素数量、减少页面层级嵌套、用域名划分页面内容、使frame数量最少、避免404错误、减少Cookie体积； 服务器部分：使用内容分发网络、使用Gzip、避免空图片、文件地址等； CSS部分：文件合并、放顶部、避免使用import、避免使用滤镜、避免使用表达式； JS部分：文件合并、放底">
+  
+    <link rel="alternate" href="/atom.xml" title="赵欢磊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">赵欢磊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhaohuanlei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-前端性能与安全" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/07/前端性能与安全/" class="article-date">
+  <time datetime="2017-08-07T08:46:40.000Z" itemprop="datePublished">2017-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      前端性能与安全
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、前端性能优化："><a href="#一、前端性能优化：" class="headerlink" title="一、前端性能优化："></a>一、前端性能优化：</h2><ol>
+<li>内容部分：尽量减少HTTP请求、减少DNS查找、避免跳转、缓存Ajax、预加载、减少DOM 元素数量、减少页面层级嵌套、用域名划分页面内容、使frame数量最少、避免404错误、减少Cookie体积；</li>
+<li>服务器部分：使用内容分发网络、使用Gzip、避免空图片、文件地址等；</li>
+<li>CSS部分：文件合并、放顶部、避免使用import、避免使用滤镜、避免使用表达式；</li>
+<li>JS部分：文件合并、放底部、封装代码去除重复的、减少DOM操作；</li>
+<li>Image部分：合并小图标、不要在HTML缩放图片、延迟加载图片、图片预加载。</li>
+</ol>
+<h2 id="二、前端安全防护："><a href="#二、前端安全防护：" class="headerlink" title="二、前端安全防护："></a>二、前端安全防护：</h2><ol>
+<li>XSS攻击：在前端方面可以理解为JS注入。防范：将前端数据转义、保护好cookie。</li>
+<li>CSRF攻击：ajax的get、post提交数据时候发生。防范：提交时候带上session、token之类的验证。</li>
+<li>网络劫持攻击：访问的时候，数据被中间代理劫持者所获。防范：建议使用HTTPS加密。</li>
+<li>控制台注入代码：诱惑用户去控制台粘贴东西。防范：控制台加上提示警告。</li>
+<li>钓鱼攻击：对网站的伪造。超出前端范围了<br>开发时候注意事项：</li>
+</ol>
+<ul>
+<li>用户信息进行严格检测</li>
+<li>用户输入信息进行过滤或转义</li>
+<li>重要内容加密再传输</li>
+<li>检查、验证请求来源</li>
+<li>使用黑名单、白名单</li>
+</ul>
+<h2 id="三、从输入URL到页面加载发生了什么？"><a href="#三、从输入URL到页面加载发生了什么？" class="headerlink" title="三、从输入URL到页面加载发生了什么？"></a>三、从输入URL到页面加载发生了什么？</h2><ol>
+<li>DNS解析：查找URL对应的IP地址</li>
+<li>TCP连接：发送HTTP请求建立连接</li>
+<li>服务器处理请求并返回数据</li>
+<li>浏览器解析并渲染页面：<ul>
+<li>由上到下开始解析HTML<ul>
+<li>当解析到头部的css文件时候，同步下载</li>
+<li>接着解析body部分，边解析边生成DOM树</li>
+<li>css下载完后就同步生成对应的DOM节点和CSS渲染树</li>
+<li>渲染树有了结构模型，就开始渲染节点的布局位置</li>
+<li>渲染中遇到图片，就会去下载，并返回到相应的图片位置</li>
+<li>渲染中遇到JS调整DOM，可能从渲染DOM那里重新来过。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/07/前端性能与安全/" data-id="cj6w6nw460002d6c6rxae6uuy" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/10/关于小程序/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          关于小程序
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/05/H5直播总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">H5直播总结</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/10/关于小程序/">关于小程序</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/07/前端性能与安全/">前端性能与安全</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/05/H5直播总结/">H5直播总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 赵欢磊<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

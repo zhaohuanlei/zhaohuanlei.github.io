@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>关于小程序 | 赵欢磊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="从用户角度，不用安装，打开直接可以，体积小最多不超过1M。 从技术角度，基于微信，同时兼容IOS、Android； 视图层中WXML和WXSS分别对应了HTML和CSS，逻辑层仍旧是JS； 没有DOM操作； 提供了一些方法和属性可以调用微信的API，如扫码、上传下载、地理位置等； 支持模块化、ES6； 增加了rpx属性，1rpx=屏幕宽度／750，和vw相似； 选择仅支持class、ID、标签、">
+<meta property="og:type" content="article">
+<meta property="og:title" content="关于小程序">
+<meta property="og:url" content="https://zhaohuanlei.github.io/2017/08/10/关于小程序/index.html">
+<meta property="og:site_name" content="赵欢磊">
+<meta property="og:description" content="从用户角度，不用安装，打开直接可以，体积小最多不超过1M。 从技术角度，基于微信，同时兼容IOS、Android； 视图层中WXML和WXSS分别对应了HTML和CSS，逻辑层仍旧是JS； 没有DOM操作； 提供了一些方法和属性可以调用微信的API，如扫码、上传下载、地理位置等； 支持模块化、ES6； 增加了rpx属性，1rpx=屏幕宽度／750，和vw相似； 选择仅支持class、ID、标签、">
+<meta property="og:updated_time" content="2017-08-28T13:13:19.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="关于小程序">
+<meta name="twitter:description" content="从用户角度，不用安装，打开直接可以，体积小最多不超过1M。 从技术角度，基于微信，同时兼容IOS、Android； 视图层中WXML和WXSS分别对应了HTML和CSS，逻辑层仍旧是JS； 没有DOM操作； 提供了一些方法和属性可以调用微信的API，如扫码、上传下载、地理位置等； 支持模块化、ES6； 增加了rpx属性，1rpx=屏幕宽度／750，和vw相似； 选择仅支持class、ID、标签、">
+  
+    <link rel="alternate" href="/atom.xml" title="赵欢磊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">赵欢磊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhaohuanlei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-关于小程序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/10/关于小程序/" class="article-date">
+  <time datetime="2017-08-10T13:58:26.000Z" itemprop="datePublished">2017-08-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      关于小程序
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>从用户角度，不用安装，打开直接可以，体积小最多不超过1M。</li>
+<li>从技术角度，基于微信，同时兼容IOS、Android；</li>
+<li>视图层中WXML和WXSS分别对应了HTML和CSS，逻辑层仍旧是JS；</li>
+<li>没有DOM操作；</li>
+<li>提供了一些方法和属性可以调用微信的API，如扫码、上传下载、地理位置等；</li>
+<li>支持模块化、ES6；</li>
+<li>增加了rpx属性，1rpx=屏幕宽度／750，和vw相似；</li>
+<li>选择仅支持class、ID、标签、伪元素::before和::after这些，不支持后代选择器；</li>
+<li>所有的HTML标签都不能用，只能用WXML提供的组件，这些组件也是有标签名、属性、内容、样式组成，可以嵌套，可以用选择器修改样式。这点类似于一些MVVM框架中的组件；</li>
+<li>事件绑定方式，不阻止事件冒泡用bind + 事件名，组织事件冒泡用catch + 事件名，JS一些事件是不支持的；</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/10/关于小程序/" data-id="cj6w6nw430000d6c6ps020u1q" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/07/前端性能与安全/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Ouder</strong>
+      <div class="article-nav-title">前端性能与安全</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/10/关于小程序/">关于小程序</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/07/前端性能与安全/">前端性能与安全</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/05/H5直播总结/">H5直播总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 赵欢磊<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

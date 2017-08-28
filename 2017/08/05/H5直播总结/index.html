@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>H5直播总结 | 赵欢磊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="一、视频协议： 目前直播主流的协议有HLS和RTMP。  HLS基于HTTP请求、响应。适合移动端。IOS支持比较好，高版本的android也支持。兼容问题网上有一些方案，sewise-player、MediaElement、videojs-contrib-hls、jwplayer；优点：适应性好、跨平台；缺点：有延迟现象。 RTMP基于falsh。延迟小、实时性好。适合PC端、互动性比较强。HT">
+<meta property="og:type" content="article">
+<meta property="og:title" content="H5直播总结">
+<meta property="og:url" content="https://zhaohuanlei.github.io/2017/08/05/H5直播总结/index.html">
+<meta property="og:site_name" content="赵欢磊">
+<meta property="og:description" content="一、视频协议： 目前直播主流的协议有HLS和RTMP。  HLS基于HTTP请求、响应。适合移动端。IOS支持比较好，高版本的android也支持。兼容问题网上有一些方案，sewise-player、MediaElement、videojs-contrib-hls、jwplayer；优点：适应性好、跨平台；缺点：有延迟现象。 RTMP基于falsh。延迟小、实时性好。适合PC端、互动性比较强。HT">
+<meta property="og:updated_time" content="2017-08-28T13:15:15.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="H5直播总结">
+<meta name="twitter:description" content="一、视频协议： 目前直播主流的协议有HLS和RTMP。  HLS基于HTTP请求、响应。适合移动端。IOS支持比较好，高版本的android也支持。兼容问题网上有一些方案，sewise-player、MediaElement、videojs-contrib-hls、jwplayer；优点：适应性好、跨平台；缺点：有延迟现象。 RTMP基于falsh。延迟小、实时性好。适合PC端、互动性比较强。HT">
+  
+    <link rel="alternate" href="/atom.xml" title="赵欢磊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">赵欢磊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhaohuanlei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-H5直播总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/05/H5直播总结/" class="article-date">
+  <time datetime="2017-08-04T16:00:37.000Z" itemprop="datePublished">2017-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      H5直播总结
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、视频协议："><a href="#一、视频协议：" class="headerlink" title="一、视频协议："></a>一、视频协议：</h2><blockquote>
+<p>目前直播主流的协议有HLS和RTMP。</p>
+<ol>
+<li>HLS基于HTTP请求、响应。适合移动端。IOS支持比较好，高版本的android也支持。兼容问题网上有一些方案，sewise-player、MediaElement、videojs-contrib-hls、jwplayer；<br>优点：适应性好、跨平台；缺点：有延迟现象。</li>
+<li>RTMP基于falsh。延迟小、实时性好。适合PC端、互动性比较强。HTML5 video标签无法播放 RTMP 协议的视频，可以通过 video.js 来实现。<br>adobe公司到2020停止falsh。</li>
+</ol>
+</blockquote>
+<h2 id="二、直播流程："><a href="#二、直播流程：" class="headerlink" title="二、直播流程："></a>二、直播流程：</h2><ol>
+<li>采集端：通过摄像头、麦克风在电脑或者手机上采集；</li>
+<li>服务端：通过服务器将采集的视频编译，然后推送到视频播放端；</li>
+<li>播放端：播放端有手机电脑的播放器，H5的video标签、客户端的native播放器</li>
+</ol>
+<h2 id="三、直播形式："><a href="#三、直播形式：" class="headerlink" title="三、直播形式："></a>三、直播形式：</h2><ol>
+<li>底部H5的video视频层当背景播放</li>
+<li>关注、评论、赞赏层，通过ajax时时发送或者获取信息</li>
+</ol>
+<h2 id="四、直播技术中的坑："><a href="#四、直播技术中的坑：" class="headerlink" title="四、直播技术中的坑："></a>四、直播技术中的坑：</h2><ol>
+<li>autoplay中IOS中不支持，可以在clik、touch等事件中调用video.paly()；</li>
+<li>内联播放，playsinline；</li>
+<li>视频层级问题，如果是QQ浏览器或者微信中，可以加 <code>x5-video-player-type=&quot;h5&quot;</code>和<code>x5-video-player-fullscreen=&quot;true&quot;</code>;</li>
+<li>video事件很多不支持，<code>timeupdate</code>和<code>ended</code>;</li>
+<li>全屏问题，<code>webkitEnterFullscreen()</code> 或 <code>webkitRequestFullScreen()</code>;可以使用伪全屏的方式，就是设置video的宽高100%；</li>
+<li>去掉IOS默认播放图标 <code>video::-webkit-media-controls-start-playback-button {  display: none; }</code></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/05/H5直播总结/" data-id="cj6w6nw450001d6c6r0npafvj" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/07/前端性能与安全/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Nieuwer</strong>
+      <div class="article-nav-title">
+        
+          前端性能与安全
+        
+      </div>
+    </a>
+  
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/10/关于小程序/">关于小程序</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/07/前端性能与安全/">前端性能与安全</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/05/H5直播总结/">H5直播总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 赵欢磊<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>

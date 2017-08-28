@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>赵欢磊</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="赵欢磊，前端，个人博客">
+<meta property="og:type" content="website">
+<meta property="og:title" content="赵欢磊">
+<meta property="og:url" content="https://zhaohuanlei.github.io/index.html">
+<meta property="og:site_name" content="赵欢磊">
+<meta property="og:description" content="赵欢磊，前端，个人博客">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="赵欢磊">
+<meta name="twitter:description" content="赵欢磊，前端，个人博客">
+  
+    <link rel="alternate" href="/atom.xml" title="赵欢磊" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">赵欢磊</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Zoeken"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://zhaohuanlei.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main">
+  
+    <article id="post-关于小程序" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/10/关于小程序/" class="article-date">
+  <time datetime="2017-08-10T13:58:26.000Z" itemprop="datePublished">2017-08-10</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/10/关于小程序/">关于小程序</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <ol>
+<li>从用户角度，不用安装，打开直接可以，体积小最多不超过1M。</li>
+<li>从技术角度，基于微信，同时兼容IOS、Android；</li>
+<li>视图层中WXML和WXSS分别对应了HTML和CSS，逻辑层仍旧是JS；</li>
+<li>没有DOM操作；</li>
+<li>提供了一些方法和属性可以调用微信的API，如扫码、上传下载、地理位置等；</li>
+<li>支持模块化、ES6；</li>
+<li>增加了rpx属性，1rpx=屏幕宽度／750，和vw相似；</li>
+<li>选择仅支持class、ID、标签、伪元素::before和::after这些，不支持后代选择器；</li>
+<li>所有的HTML标签都不能用，只能用WXML提供的组件，这些组件也是有标签名、属性、内容、样式组成，可以嵌套，可以用选择器修改样式。这点类似于一些MVVM框架中的组件；</li>
+<li>事件绑定方式，不阻止事件冒泡用bind + 事件名，组织事件冒泡用catch + 事件名，JS一些事件是不支持的；</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/10/关于小程序/" data-id="cj6w6nw430000d6c6ps020u1q" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-前端性能与安全" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/07/前端性能与安全/" class="article-date">
+  <time datetime="2017-08-07T08:46:40.000Z" itemprop="datePublished">2017-08-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/07/前端性能与安全/">前端性能与安全</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、前端性能优化："><a href="#一、前端性能优化：" class="headerlink" title="一、前端性能优化："></a>一、前端性能优化：</h2><ol>
+<li>内容部分：尽量减少HTTP请求、减少DNS查找、避免跳转、缓存Ajax、预加载、减少DOM 元素数量、减少页面层级嵌套、用域名划分页面内容、使frame数量最少、避免404错误、减少Cookie体积；</li>
+<li>服务器部分：使用内容分发网络、使用Gzip、避免空图片、文件地址等；</li>
+<li>CSS部分：文件合并、放顶部、避免使用import、避免使用滤镜、避免使用表达式；</li>
+<li>JS部分：文件合并、放底部、封装代码去除重复的、减少DOM操作；</li>
+<li>Image部分：合并小图标、不要在HTML缩放图片、延迟加载图片、图片预加载。</li>
+</ol>
+<h2 id="二、前端安全防护："><a href="#二、前端安全防护：" class="headerlink" title="二、前端安全防护："></a>二、前端安全防护：</h2><ol>
+<li>XSS攻击：在前端方面可以理解为JS注入。防范：将前端数据转义、保护好cookie。</li>
+<li>CSRF攻击：ajax的get、post提交数据时候发生。防范：提交时候带上session、token之类的验证。</li>
+<li>网络劫持攻击：访问的时候，数据被中间代理劫持者所获。防范：建议使用HTTPS加密。</li>
+<li>控制台注入代码：诱惑用户去控制台粘贴东西。防范：控制台加上提示警告。</li>
+<li>钓鱼攻击：对网站的伪造。超出前端范围了<br>开发时候注意事项：</li>
+</ol>
+<ul>
+<li>用户信息进行严格检测</li>
+<li>用户输入信息进行过滤或转义</li>
+<li>重要内容加密再传输</li>
+<li>检查、验证请求来源</li>
+<li>使用黑名单、白名单</li>
+</ul>
+<h2 id="三、从输入URL到页面加载发生了什么？"><a href="#三、从输入URL到页面加载发生了什么？" class="headerlink" title="三、从输入URL到页面加载发生了什么？"></a>三、从输入URL到页面加载发生了什么？</h2><ol>
+<li>DNS解析：查找URL对应的IP地址</li>
+<li>TCP连接：发送HTTP请求建立连接</li>
+<li>服务器处理请求并返回数据</li>
+<li>浏览器解析并渲染页面：<ul>
+<li>由上到下开始解析HTML<ul>
+<li>当解析到头部的css文件时候，同步下载</li>
+<li>接着解析body部分，边解析边生成DOM树</li>
+<li>css下载完后就同步生成对应的DOM节点和CSS渲染树</li>
+<li>渲染树有了结构模型，就开始渲染节点的布局位置</li>
+<li>渲染中遇到图片，就会去下载，并返回到相应的图片位置</li>
+<li>渲染中遇到JS调整DOM，可能从渲染DOM那里重新来过。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/07/前端性能与安全/" data-id="cj6w6nw460002d6c6rxae6uuy" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-H5直播总结" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/05/H5直播总结/" class="article-date">
+  <time datetime="2017-08-04T16:00:37.000Z" itemprop="datePublished">2017-08-05</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/08/05/H5直播总结/">H5直播总结</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="一、视频协议："><a href="#一、视频协议：" class="headerlink" title="一、视频协议："></a>一、视频协议：</h2><blockquote>
+<p>目前直播主流的协议有HLS和RTMP。</p>
+<ol>
+<li>HLS基于HTTP请求、响应。适合移动端。IOS支持比较好，高版本的android也支持。兼容问题网上有一些方案，sewise-player、MediaElement、videojs-contrib-hls、jwplayer；<br>优点：适应性好、跨平台；缺点：有延迟现象。</li>
+<li>RTMP基于falsh。延迟小、实时性好。适合PC端、互动性比较强。HTML5 video标签无法播放 RTMP 协议的视频，可以通过 video.js 来实现。<br>adobe公司到2020停止falsh。</li>
+</ol>
+</blockquote>
+<h2 id="二、直播流程："><a href="#二、直播流程：" class="headerlink" title="二、直播流程："></a>二、直播流程：</h2><ol>
+<li>采集端：通过摄像头、麦克风在电脑或者手机上采集；</li>
+<li>服务端：通过服务器将采集的视频编译，然后推送到视频播放端；</li>
+<li>播放端：播放端有手机电脑的播放器，H5的video标签、客户端的native播放器</li>
+</ol>
+<h2 id="三、直播形式："><a href="#三、直播形式：" class="headerlink" title="三、直播形式："></a>三、直播形式：</h2><ol>
+<li>底部H5的video视频层当背景播放</li>
+<li>关注、评论、赞赏层，通过ajax时时发送或者获取信息</li>
+</ol>
+<h2 id="四、直播技术中的坑："><a href="#四、直播技术中的坑：" class="headerlink" title="四、直播技术中的坑："></a>四、直播技术中的坑：</h2><ol>
+<li>autoplay中IOS中不支持，可以在clik、touch等事件中调用video.paly()；</li>
+<li>内联播放，playsinline；</li>
+<li>视频层级问题，如果是QQ浏览器或者微信中，可以加 <code>x5-video-player-type=&quot;h5&quot;</code>和<code>x5-video-player-fullscreen=&quot;true&quot;</code>;</li>
+<li>video事件很多不支持，<code>timeupdate</code>和<code>ended</code>;</li>
+<li>全屏问题，<code>webkitEnterFullscreen()</code> 或 <code>webkitRequestFullScreen()</code>;可以使用伪全屏的方式，就是设置video的宽高100%；</li>
+<li>去掉IOS默认播放图标 <code>video::-webkit-media-controls-start-playback-button {  display: none; }</code></li>
+</ol>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://zhaohuanlei.github.io/2017/08/05/H5直播总结/" data-id="cj6w6nw450001d6c6r0npafvj" class="article-share-link">Delen</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archieven</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recente berichten</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2017/08/10/关于小程序/">关于小程序</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/07/前端性能与安全/">前端性能与安全</a>
+          </li>
+        
+          <li>
+            <a href="/2017/08/05/H5直播总结/">H5直播总结</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2017 赵欢磊<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
